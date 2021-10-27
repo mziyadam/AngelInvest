@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1038108148294",
+    "project_id": "angel-invest",
+    "storage_bucket": "angel-invest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1038108148294:android:dc1eece5fa39f8d4d90047",
+        "android_client_info": {
+          "package_name": "com.tim3333.angelinvest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1038108148294-ah1a463lfhetsa6aaqcgo8ih3h78hmoo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgCrpYUErDFSJGCyozTV5gkdtYSjpLm_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1038108148294-ah1a463lfhetsa6aaqcgo8ih3h78hmoo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
