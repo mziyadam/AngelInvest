@@ -4,8 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.tim3333.angelinvest.databinding.ActivityMainBinding
 import com.tim3333.angelinvest.explore.ExploreFragment
-import com.tim3333.angelinvest.notification.NotificationFragment
-import com.tim3333.angelinvest.portofolio.PortofolioFragment
+import com.tim3333.angelinvest.message.MessageFragment
+import com.tim3333.angelinvest.myportofolio.MyPortofolioFragment
 import com.tim3333.angelinvest.profile.ProfileFragment
 
 class MainActivity : AppCompatActivity() {
@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val exploreFragment = ExploreFragment()
-        val portofolioFragment = PortofolioFragment()
-        val notificationFragment = NotificationFragment()
+        val portofolioFragment = MyPortofolioFragment()
+        val notificationFragment = MessageFragment()
         val profileFragment = ProfileFragment()
         supportFragmentManager.beginTransaction().apply {
             replace(binding.fragmentMain.id, exploreFragment)
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
                 commit()
             }
         }
-        binding.btnPortofolio.setOnClickListener {
+        binding.btnMyPortofolio.setOnClickListener {
             supportFragmentManager.beginTransaction().apply {
                 replace(binding.fragmentMain.id, portofolioFragment)
                 commit()

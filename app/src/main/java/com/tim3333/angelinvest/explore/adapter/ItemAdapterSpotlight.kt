@@ -30,14 +30,16 @@ class ItemAdapterSpotlight(private val context: Context, private val dataset:Lis
     }
 
     override fun getItemCount()=dataset.size
-
+    fun reload(){
+        notifyDataSetChanged()
+    }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item =dataset[position]
         holder.tvName.text=item.name
         holder.tvLocation.text=item.location
         holder.tvDescription.text=item.description
-        Picasso.with(context).load(item.imgUrl).into(holder.imageView)
-        Picasso.with(context).load(item.imgUrlProfile).into(holder.imageViewProfile)
+        Picasso.with(context).load(item.backImgUrl).into(holder.imageView)
+        Picasso.with(context).load(item.imgUrl).into(holder.imageViewProfile)
     }
 }

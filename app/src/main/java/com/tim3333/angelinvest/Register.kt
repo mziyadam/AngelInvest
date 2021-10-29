@@ -53,6 +53,11 @@ class Register : AppCompatActivity() {
             )
         }
     }
+    fun getName(email:String?):String{
+
+        val name: String = email!!.substringBefore("@")
+        return name
+    }
     private fun createAccount(email: String, password: String) {
         // [START create_user_with_email]
         auth.createUserWithEmailAndPassword(email, password)
@@ -66,6 +71,8 @@ class Register : AppCompatActivity() {
                     val myRef = database.getReference("users").child("${user?.uid}")
 
                     myRef.child("email").setValue("${user?.email}")
+                    myRef.child("name").setValue(getName(user?.email))
+                    myRef.child("total").setValue(0)
                     startActivity(
                         Intent(
                             applicationContext,

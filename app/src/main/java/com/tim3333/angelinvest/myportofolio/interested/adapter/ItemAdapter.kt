@@ -11,7 +11,7 @@ import com.example.affirmation.model.Startup
 import com.squareup.picasso.Picasso
 import com.tim3333.angelinvest.R
 
-class ItemAdapter(private val context: Context,private val dataset:List<Startup>):RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
+class InterestedAdapter(private val context: Context,private val dataset:List<Startup>):RecyclerView.Adapter<InterestedAdapter.ItemViewHolder>() {
 
     class ItemViewHolder(private val view:View): RecyclerView.ViewHolder(view) {
 

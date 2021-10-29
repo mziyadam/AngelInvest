@@ -11,11 +11,11 @@ import com.example.affirmation.model.Startup
 import com.squareup.picasso.Picasso
 import com.tim3333.angelinvest.R
 
-class ItemAdapter(private val context: Context,private val dataset:List<Startup>):RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
+class RecentAdapter(private val context: Context,private val dataset:List<Startup>):RecyclerView.Adapter<RecentAdapter.ItemViewHolder>() {
 
     class ItemViewHolder(private val view:View): RecyclerView.ViewHolder(view) {
 
-        val tvName: TextView =view.findViewById(R.id.item_name)
+        val tvName: TextView =view.findViewById(R.id.item_tes)
         val tvLocation: TextView =view.findViewById(R.id.item_location)
         val tvDescription: TextView =view.findViewById(R.id.item_description)
         val imageView: ImageView=view.findViewById(R.id.item_image)

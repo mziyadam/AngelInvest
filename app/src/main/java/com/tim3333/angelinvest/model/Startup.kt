@@ -1,5 +1,7 @@
 package com.example.affirmation.model
 
-data class Startup(val name: String, val location: String, val description: String, val imgUrl: String, val imgUrlProfile: String, val target: Int, val minimum: Int, val maximum: Int, val stage : String) {
+import com.google.firebase.database.IgnoreExtraProperties
 
-}
+@IgnoreExtraProperties
+data class Startup(val backImgUrl: String?=null, val description: String?=null, val filled: Int?=0, val imgUrl: String?=null, val location: String?=null, val maximum: Int?=0, val minimum: Int?=0, val name: String?=null, val stage : String?=null, val target: Int?=0   )
+
